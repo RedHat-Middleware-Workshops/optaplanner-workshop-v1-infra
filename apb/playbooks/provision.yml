@@ -1,4 +1,4 @@
-- name: optaplanner-workshopv1-apb playbook to provision the application
+- name: optaplanner-workshop-v1-apb playbook to provision the application
   hosts: localhost
   gather_facts: false
   connection: local
