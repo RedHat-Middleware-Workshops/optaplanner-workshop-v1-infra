@@ -1,0 +1,20 @@
+---
+
+#- name: Check if ImageStream exists
+#  shell: "oc get is/rhpam73-businesscentral-openshift-cm-showcase -n {{OCP_PROJECT}}"
+#  register: is_result
+#  ignore_errors: true
+#  changed_when: false
+
+- name: Deploy Code-Ready Workspaces
+  shell: "oc create -f {{ role_path }}/files/codeready-workspaces-operator-installer/deploy.sh --deploy --project={{ OCP_PROJECT }}"
+#  when: is_result is failed
+
+#- name: wait for che to be running
+#    uri:
+#      url: http://codeready-{{ namespace }}.{{ apps_hostname_suffix }}/api/system/state
+#      status_code: 200
+#    register: result
+#    until: result.status == 200
+#    retries: 60
+#    delay: 30

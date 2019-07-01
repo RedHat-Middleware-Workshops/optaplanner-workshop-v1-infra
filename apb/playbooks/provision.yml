@@ -351,6 +351,14 @@
 #    vars:
 #      OCP_PROJECT: '{{namespace}}'
 
+
+## Create CodeReady Workspaces environment.
+  - include_role:
+      name: codeready_workspaces
+    vars:
+      OCP_PROJECT: '{{ namespace }}'
+#    with_sequence: start=1 end={{user_count}}
+
 ## Create user projects
   - include_role:
       name: optaplanner_project
@@ -358,6 +366,8 @@
       USER_NUMBER: '{{item}}'
       OCP_PROJECT: 'optaplanner-user{{item}}'
     with_sequence: start=1 end={{user_count}}
+
+
 
 #  - include_tasks: ./rhpam_project.yml
 #    vars:
