@@ -240,7 +240,7 @@
       name: openshift_workshopper
       allow_duplicates: true
     vars:
-      workshopper_name: guides-m1
+      workshopper_name: guides-m2
       project_name: "{{ namespace }}"
       workshopper_content_url_prefix: "https://raw.githubusercontent.com/{{ github_account }}/optaplanner-workshop-v1m2-guides/{{ github_ref }}"
       workshopper_workshop_urls: "https://raw.githubusercontent.com/{{ github_account }}/optaplanner-workshop-v1m2-guides/{{ github_ref }}/_optaplanner-workshop-module2.yml"
@@ -258,7 +258,7 @@
       name: openshift_workshopper
       allow_duplicates: true
     vars:
-      workshopper_name: guides-m1
+      workshopper_name: guides-m3
       project_name: "{{ namespace }}"
       workshopper_content_url_prefix: "https://raw.githubusercontent.com/{{ github_account }}/optaplanner-workshop-v1m3-guides/{{ github_ref }}"
       workshopper_workshop_urls: "https://raw.githubusercontent.com/{{ github_account }}/optaplanner-workshop-v1m3-guides/{{ github_ref }}/_optaplanner-workshop-module1.yml"
