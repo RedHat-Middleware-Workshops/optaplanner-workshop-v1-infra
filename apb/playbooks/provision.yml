@@ -261,7 +261,7 @@
       workshopper_name: guides-m3
       project_name: "{{ namespace }}"
       workshopper_content_url_prefix: "https://raw.githubusercontent.com/{{ github_account }}/optaplanner-workshop-v1m3-guides/{{ github_ref }}"
-      workshopper_workshop_urls: "https://raw.githubusercontent.com/{{ github_account }}/optaplanner-workshop-v1m3-guides/{{ github_ref }}/_optaplanner-workshop-module1.yml"
+      workshopper_workshop_urls: "https://raw.githubusercontent.com/{{ github_account }}/optaplanner-workshop-v1m3-guides/{{ github_ref }}/_optaplanner-workshop-module3.yml"
       workshopper_env_vars:
         PROJECT_SUFFIX: "{{ project_suffix }}"
         #COOLSTORE_PROJECT: coolstore{{ project_suffix }}
